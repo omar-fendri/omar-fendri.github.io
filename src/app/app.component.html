@@ -1,10 +1,10 @@
 <mat-toolbar>
-  <span>OmarFendri<span class="primary">.com</span></span>
+  <span>omarFendri<span class="primary">.com</span></span>
   <span class="example-spacer"></span>
   <div>
     <span style="font-style: italic; font-size:0.75em; color: #525252 ">"Compare Yourself To Who You Were Yesterday, Not To Who Someone Else Is Today"</span><br>
     <div  style="text-align: right; margin-top:-0.8em"><span style="font-style: italic; font-size: 0.59em; padding-right: 2em">- Jordan Peterson</span></div>
-    <div class="primary" style="text-align: left; margin-top:-1.6em"><span style="font-style: italic; font-size:0.7em;">Quote of the week</span></div>
+    <div class="primary" style="text-align: left; margin-top:-1.6em"><span style="font-size:0.59em;">Quote of the week</span></div>
   </div>
   <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
     <mat-icon>favorite</mat-icon>
@@ -16,3 +16,8 @@
 <button mat-button>People I Follow</button>
 <button mat-button>Life hacks</button>
 <button mat-button>About</button>
+<mat-card class="dashboard-card">
+  <mat-card-content class="dashboard-card-content">
+    <button mat-stroked-button (click)="downloadMyResume()">Download My Resume</button>
+  </mat-card-content>
+</mat-card>

@@ -12,6 +12,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import {MatMenuModule} from '@angular/material/menu';
 import { ScullyLibModule } from '@scullyio/ng-lib';
+import {MatCardModule} from '@angular/material/card';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { ScullyLibModule } from '@scullyio/ng-lib';
     MatIconModule,
     MatListModule,
     MatMenuModule,
-    ScullyLibModule
+    ScullyLibModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]

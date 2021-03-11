@@ -18,4 +18,14 @@ export class AppComponent {
     }
     return [year, month, day].join('-');
   }
+
+  downloadMyResume() {
+    const link = document.createElement('a');
+    link.setAttribute('target', '_blank');
+    link.setAttribute('href', 'assets/final.pdf');
+    link.setAttribute('download', `final.pdf`);
+    document.body.appendChild(link);
+    link.click();
+    link.remove();
+  }
 }
