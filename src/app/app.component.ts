@@ -22,8 +22,8 @@ export class AppComponent {
   downloadMyResume() {
     const link = document.createElement('a');
     link.setAttribute('target', '_blank');
-    link.setAttribute('href', 'assets/final.pdf');
-    link.setAttribute('download', `final.pdf`);
+    link.setAttribute('href', 'assets/resume.pdf');
+    link.setAttribute('download', `Omar-Fendri-Resume-03-2021.pdf`);
     document.body.appendChild(link);
     link.click();
     link.remove();
