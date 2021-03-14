@@ -14,6 +14,7 @@ import {MatMenuModule} from '@angular/material/menu';
 import { ScullyLibModule } from '@scullyio/ng-lib';
 import {MatCardModule} from '@angular/material/card';
 import {MatGridListModule} from '@angular/material/grid-list';
+import {MatTooltipModule} from '@angular/material/tooltip';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import {MatGridListModule} from '@angular/material/grid-list';
     MatMenuModule,
     ScullyLibModule,
     MatCardModule,
-    MatGridListModule
+    MatGridListModule,
+    MatTooltipModule
   ],
   providers: [],
   bootstrap: [AppComponent]

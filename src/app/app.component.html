@@ -1,51 +1,72 @@
-<mat-toolbar>
-  <img src="../assets/icons8-harry-potter-80.png" style="height: 68%; padding-right: 0.3em;"> <span>omarFendri<span
-  class="primary">.com</span></span>
-  <span class="example-spacer"></span>
-  <div>
-    <span style="font-style: italic; font-size:0.75em; color: #525252 ">"Compare Yourself To Who You Were Yesterday, Not To Who Someone Else Is Today"</span><br>
-    <div style="text-align: right; margin-top:-0.8em"><span
-      style="font-style: italic; font-size: 0.59em; padding-right: 2em">- Jordan Peterson</span></div>
-    <div class="primary" style="text-align: left; margin-top:-1.6em"><span
-      style="font-size:0.59em;">Quote of the week</span></div>
+<div id="page-container">
+  <div id="content-wrap">
+    <mat-toolbar>
+      <img src="../assets/icons8-harry-potter-80.png" style="height: 68%; padding-right: 0.3em;"> <span>omarFendri<span
+      class="primary">.com</span></span>
+      <span class="example-spacer"></span>
+      <div>
+        <span style="font-style: italic; font-size:0.75em; color: #525252 ">"Compare Yourself To Who You Were Yesterday, Not To Who Someone Else Is Today"</span><br>
+        <div style="text-align: right; margin-top:-0.8em"><span
+          style="font-style: italic; font-size: 0.59em; padding-right: 2em">- Jordan Peterson</span></div>
+        <div class="primary" style="text-align: left; margin-top:-1.6em"><span
+          style="font-size:0.59em;">Quote of the week</span></div>
+      </div>
+      <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+        <mat-icon>favorite</mat-icon>
+      </button>
+    </mat-toolbar>
+    <button mat-button>Articles</button>
+    <button mat-button>Tutorials</button>
+    <button mat-button>Books I Read</button>
+    <button mat-button>People I Follow</button>
+    <button mat-button>Life hacks</button>
+    <button mat-button>About</button>
+    <mat-card style="margin-top: 3em">
+      <mat-card-content style="margin: 0 0 0 1.5em">
+        <mat-grid-list cols="10" rowHeight="500px" style="margin-bottom: 0.64em">
+          <mat-grid-tile colspan="1" rowspan="1"></mat-grid-tile>
+            <mat-grid-tile colspan="5" rowspan="1">
+            <div>
+              <div class="mat-display-1">
+                <b>I'm Omar Fendri. I'm a Software Engineer —</b>
+              </div>
+              <div class="mat-h1">
+                I believe my mission is to reach and try to collaborate with pioneers not only to
+                transform people's lives but also to impact the future of software development through learning the best
+                techniques and sharing knowledge continuously with others.
+              </div>
+              <div class="mat-h1">
+                I like to explore interesting problems then try to solve them by writing code.
+              </div>
+            </div>
+          </mat-grid-tile>
+          <mat-grid-tile colspan="3" rowspan="1">
+            <div style="padding-bottom: 10em;padding-right: 10em">
+              <img width="230" src="../assets/mee.jpg">
+            </div>
+            <!--        <button mat-stroked-button (click)="downloadMyResume()" style="line-height: 12px; padding: 1em">-->
+            <!--          <mat-icon>cloud_download</mat-icon>-->
+            <!--          <span style="padding-left: 1em">Download My Resume (CV) <br> <span-->
+            <!--            style="font-size: smaller;color: #3286ce; font-style: italic;font-weight: 400;">Last update 03/2021</span></span></button>-->
+          </mat-grid-tile>
+        </mat-grid-list>
+      </mat-card-content>
+    </mat-card>
   </div>
-  <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
-    <mat-icon>favorite</mat-icon>
-  </button>
-</mat-toolbar>
-<button mat-button>Articles</button>
-<button mat-button>Tutorials</button>
-<button mat-button>Books I Read</button>
-<button mat-button>People I Follow</button>
-<button mat-button>Life hacks</button>
-<button mat-button>About</button>
-<mat-card>
-  <mat-card-content style="margin: 0 0 0 1.5em">
-    <mat-grid-list cols="2" rowHeight="500px" style="margin-bottom: 0.64em">
-      <mat-grid-tile colspan="1" rowspan="1">
-        <div>
-          <div class="mat-display-1">
-            <b>I'm Omar Fendri. I'm a Software Engineer —</b>
-          </div>
-          <div class="mat-h1">
-            I believe my mission is to reach and try to collaborate with pioneers not only to
-            transform people's lives but also to impact the future of software development through learning the best
-            techniques and sharing knowledge continuously with others.
-          </div>
-          <div class="mat-h1">
-            I like to explore interesting problems then try to solve them by writing code.
-          </div>
-        </div>
+  <footer id="footer">
+    <mat-grid-list cols="5" rowHeight="5em">
+      <mat-grid-tile colspan="1">
+        <span>© Omar Fendri 2021</span>
       </mat-grid-tile>
-      <mat-grid-tile colspan="1" rowspan="1">
-        <div style="padding-bottom: 10em;padding-right: 10em">
-          <img src="../assets/mee.jpg">
-        </div>
-<!--        <button mat-stroked-button (click)="downloadMyResume()" style="line-height: 12px; padding: 1em">-->
-<!--          <mat-icon>cloud_download</mat-icon>-->
-<!--          <span style="padding-left: 1em">Download My Resume (CV) <br> <span-->
-<!--            style="font-size: smaller;color: #3286ce; font-style: italic;font-weight: 400;">Last update 03/2021</span></span></button>-->
+      <mat-grid-tile colspan="3">
+        <a href="https://scully.io/" target="_blank"><img  class="clickable" matTooltip="Built with Scully" style="width: 2.2em; padding-right: 1em" src="../assets/scully.png" alt="Built with Scully"></a>
+        <a href="https://github.com/omar-fendri" target="_blank"><img class="clickable" matTooltip="Open-source on github" style="width: 2.2em" src="../assets/github.png"></a>
+      </mat-grid-tile>
+      <mat-grid-tile colspan="1">
+        <a href="https://twitter.com/0marFendri" target="_blank"><img class="clickable" style="width: 1.5em; padding-right: 0.8em" src="../assets/twitter.png"></a>
+        <a href="https://www.facebook.com/fendsoft/" target="_blank"><img class="clickable" style="width: 1.4em; padding-right: 1em" src="../assets/facebook.png"></a>
+        <a href="https://www.linkedin.com/in/omar-fendri/" target="_blank"><img class="clickable" style="width: 1.4em; padding-right: 1em" src="../assets/linkedin.png"></a>
       </mat-grid-tile>
     </mat-grid-list>
-  </mat-card-content>
-</mat-card>
+  </footer>
+</div>
