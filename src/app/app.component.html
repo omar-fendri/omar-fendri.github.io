@@ -20,7 +20,7 @@
     <button mat-button>Books I Read</button>
     <button mat-button>People I Follow</button>
     <button mat-button>Life hacks</button>
-    <button mat-button>About</button>
+    <button mat-button routerLink="about">About</button>
     <mat-card style="margin-top: 3em">
       <mat-card-content style="margin: 0 0 0 1.5em">
         <mat-grid-list cols="10" rowHeight="500px" style="margin-bottom: 0.64em">
@@ -52,6 +52,7 @@
         </mat-grid-list>
       </mat-card-content>
     </mat-card>
+    <router-outlet></router-outlet>
   </div>
   <footer id="footer">
     <mat-grid-list cols="5" rowHeight="5em">

@@ -15,10 +15,12 @@ import { ScullyLibModule } from '@scullyio/ng-lib';
 import {MatCardModule} from '@angular/material/card';
 import {MatGridListModule} from '@angular/material/grid-list';
 import {MatTooltipModule} from '@angular/material/tooltip';
+import { AboutComponent } from './about/components/about/about.component';
 
 @NgModule({
   declarations: [
     AppComponent,
+    AboutComponent,
   ],
   imports: [
     BrowserModule,
