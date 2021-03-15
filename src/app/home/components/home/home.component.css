@@ -1,0 +1,13 @@
+.example-spacer {
+  flex: 1 1 auto;
+}
+.primary{
+  /*color: #3f51b5;*/
+  color: #0e86ce;
+}
+.example-icon:hover{
+  cursor: pointer;
+  color: #525252;
+}.example-icon{
+   color: #8e8e8e;
+ }

@@ -16,11 +16,19 @@ import {MatCardModule} from '@angular/material/card';
 import {MatGridListModule} from '@angular/material/grid-list';
 import {MatTooltipModule} from '@angular/material/tooltip';
 import { AboutComponent } from './about/components/about/about.component';
+import { HomeComponent } from './home/components/home/home.component';
+import { HeaderComponent } from './header/components/header/header.component';
+import { NavComponent } from './nav/components/nav/nav.component';
+import { FooterComponent } from './footer/components/footer/footer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AboutComponent,
+    HomeComponent,
+    HeaderComponent,
+    NavComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
