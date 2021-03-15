@@ -20,6 +20,7 @@ import { HomeComponent } from './home/components/home/home.component';
 import { HeaderComponent } from './header/components/header/header.component';
 import { NavComponent } from './nav/components/nav/nav.component';
 import { FooterComponent } from './footer/components/footer/footer.component';
+import { DownloadResumeBtnComponent } from './about/components/download-resume-btn/download-resume-btn.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import { FooterComponent } from './footer/components/footer/footer.component';
     HeaderComponent,
     NavComponent,
     FooterComponent,
+    DownloadResumeBtnComponent,
   ],
   imports: [
     BrowserModule,

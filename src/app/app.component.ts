@@ -18,14 +18,4 @@ export class AppComponent {
     }
     return [year, month, day].join('-');
   }
-
-  downloadMyResume() {
-    const link = document.createElement('a');
-    link.setAttribute('target', '_blank');
-    link.setAttribute('href', 'assets/resume.pdf');
-    link.setAttribute('download', `Omar-Fendri-Resume-03-2021.pdf`);
-    document.body.appendChild(link);
-    link.click();
-    link.remove();
-  }
 }
