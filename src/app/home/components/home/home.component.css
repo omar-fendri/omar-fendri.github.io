@@ -11,3 +11,7 @@
 }.example-icon{
    color: #8e8e8e;
  }
+
+.mat-card:not([class*=mat-elevation-z]) {
+  box-shadow: none;
+}
