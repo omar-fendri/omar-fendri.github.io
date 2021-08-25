@@ -1,39 +1,64 @@
-<mat-card style="margin-top: 3em">
-  <mat-card-content style="margin: 0 0 0 1.5em">
-    <mat-grid-list cols="10" rowHeight="500px" style="margin-bottom: 0.64em">
-      <mat-grid-tile colspan="1" rowspan="1"></mat-grid-tile>
-      <mat-grid-tile colspan="5" rowspan="1">
-        <div>
-          <div class="mat-display-1">
-            <b>I'm Omar. I'm a Software Engineer —</b>
-          </div>
-          <div class="mat-h1">
-            I have around 2 years of professional experience in full-stack
-            web development.
-            <br>Most of it is around the java and typescript
-            ecosystem (tech stack: Angular/Spring).
-            <br><br>
-            I can tackle projects from web design up to implementing
-            back-end web services and database calls.
-            <br><br>
-            I believe my mission is to reach and collaborate with pioneers not only to
-            transform people's lives but also to impact the future of software development through <br><b>learning</b> the best
-            techniques & <b>sharing</b> knowledge continuously with others.
-          </div>
-          <div class="mat-h1">
-            Currently focusing on full-stack, scalable web application development.
-          </div>
-        </div>
-      </mat-grid-tile>
-      <mat-grid-tile colspan="3" rowspan="1">
+<div [ngStyle]="{ padding: (isWideScreen$ |async)?'5em 10em 0em 10em':'2em 2em 0em 2em'}">
+  <div class="row">
+    <div [class]="(isWideScreen$ |async)?'col-8':'col-md-12'">
+      <div style="font-family: 'Besley', serif;">
+        <span [ngStyle]="{ 'font-size': (isWideScreen$ |async)?'3em':(isSmallScreen$ |async)?'1.4em':'2.2em'}" style="font-weight: 900">Hey—</span>
+        <br>
+        <span  [ngStyle]="{ 'font-size': (isWideScreen$ |async)?'2.4em':(isSmallScreen$ |async)?'0.9em':'1.8em'}" style="font-weight: 600;">I'm Omar. I'm a Software Engineer.</span>
+      </div>
+      <div class="mat-h1" [ngStyle]="{ 'font-size': (isWideScreen$ |async)?'1.5em':(isSmallScreen$ |async)?'0.85em':'1.2em'}" style="padding-top: 2em; font-family: 'Montserrat', sans-serif;">
+        I have around 2 years of professional experience in full-stack
+        web development. Most of it is around the java and typescript
+        ecosystem (tech stack: Angular/Spring).
+        <br><br>
+        I can tackle projects from database calls up to implementing
+        back-end web services and working on UI/UX design .
+        <br><br>
+        My mission is to reach and collaborate with pioneers not only to
+        transform people's lives but also to impact the future of software development profession through
+        <span style="text-decoration: underline"><b>learning</b></span> the best techniques & <span style="text-decoration: underline"><b>sharing</b></span> knowledge continuously with others.
+
+        <div style="padding-top: 1em"><br> Currently focusing on full-stack, scalable web application development.</div>
+      </div>
+    </div>
+    <ng-container *ngIf="isWideScreen$ | async">
+      <div [class]="(isWideScreen$ |async)?'col-4':'col-md-12'" style="padding: 8em 0 0 5em; text-align: center">
         <div>
           <img style="border-radius: 50%" width="230" src="../../../../assets/me9.jpg">
         </div>
-        <!--        <button mat-stroked-button (click)="downloadMyResume()" style="line-height: 12px; padding: 1em">-->
-        <!--          <mat-icon>cloud_download</mat-icon>-->
-        <!--          <span style="padding-left: 1em">Download My Resume (CV) <br> <span-->
-        <!--            style="font-size: smaller;color: #3286ce; font-style: italic;font-weight: 400;">Last update 03/2021</span></span></button>-->
-      </mat-grid-tile>
-    </mat-grid-list>
-  </mat-card-content>
-</mat-card>
+        <div>
+          <button mat-stroked-button (click)="downloadMyResume()" style="line-height: 12px; padding: 1em; margin:1em;     background-color: #f5f5f5;">
+            <mat-icon style="padding-top: 0.33em">cloud_download</mat-icon>
+            <span style="padding-left: 1em">Download Resume (CV) <br> <span
+              style="font-size: smaller;color: #3286ce; font-weight: 400;">Last update 03/2021</span></span>
+          </button>
+        </div>
+      </div>
+    </ng-container>
+
+    <ng-container *ngIf="!(isWideScreen$ | async) && !(isSmallScreen$ | async)">
+      <div [class]="(isWideScreen$ |async)?'col-8':'col-md-12'" class="row" style="padding: 2em 0 8em 5em">
+        <div style="display: inline">
+          <img style="border-radius: 50%" width="150" src="../../../../assets/me9.jpg">
+        </div>
+        <div style="padding: 2em 0 0 3em; display: inline">
+          <button mat-stroked-button (click)="downloadMyResume()" style="line-height: 12px; padding: 1em; margin:1em;     background-color: #f5f5f5;">
+            <mat-icon style="padding-top: 0.33em">cloud_download</mat-icon>
+            <span style="padding-left: 1em">Download Resume (CV) <br> <span
+              style="font-size: smaller;color: #3286ce; font-weight: 400;">Last update 03/2021</span></span>
+          </button>
+        </div>
+      </div>
+    </ng-container>
+
+    <div *ngIf="isSmallScreen$ |async" class="col-12" style="text-align: center" >
+        <img style="border-radius: 50%" width="120" src="../../../../assets/me9.jpg">
+      <button mat-stroked-button (click)="downloadMyResume()" style="line-height: 12px; padding: 1em; margin:1em;     background-color: #f5f5f5;">
+        <mat-icon style="padding-top: 0.33em">cloud_download</mat-icon>
+        <span style="padding-left: 1em">Download Resume (CV) <br> <span
+          style="font-size: smaller;color: #3286ce; font-weight: 400;">Last update 08/2021</span></span>
+      </button>
+    </div>
+  </div>
+</div>
+
