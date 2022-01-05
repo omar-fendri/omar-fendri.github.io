@@ -1,36 +1,46 @@
 <div [ngStyle]="{ padding: (isWideScreen$ |async)?'5em 10em 0em 10em':'2em 2em 0em 2em'}">
   <div class="row">
     <div [class]="(isWideScreen$ |async)?'col-8':'col-md-12'">
-      <div style="font-family: 'Besley', serif;">
+      <div style="font-family: 'Fira Code Medium', sans-serif;">
         <span [ngStyle]="{ 'font-size': (isWideScreen$ |async)?'3em':(isSmallScreen$ |async)?'1.4em':'2.2em'}" style="font-weight: 900">Hey—</span>
         <br>
         <span  [ngStyle]="{ 'font-size': (isWideScreen$ |async)?'2.4em':(isSmallScreen$ |async)?'0.9em':'1.8em'}" style="font-weight: 600;">I'm Omar. I'm a Software Engineer.</span>
       </div>
       <div class="mat-h1" [ngStyle]="{ 'font-size': (isWideScreen$ |async)?'1.5em':(isSmallScreen$ |async)?'0.85em':'1.2em'}" style="padding-top: 2em; font-family: 'Montserrat', sans-serif;">
-        I have around 2 years of professional experience in full-stack
-        web development. Most of it is around the java and typescript
-        ecosystem (tech stack: Angular/Spring).
-        <br><br>
-        I can tackle projects from database calls up to implementing
-        back-end web services and working on UI/UX design .
-        <br><br>
+        <ul>
+          <li> Software Engineer & Clean Code Enthusiast</li>
+          <li> 3 Years of designing & implementing enterprise applications for $</li>
+          <li> Competitive Programmer (<a href="https://icpc.global/ICPCID/N0NP7VWMM5H6" target="_blank">ICPC</a>, <a href="https://codeforces.com/profile/fendrix" target="_blank">Codeforces</a>) </li>
+          <li> Engineer's degree in Computer Software (2019) </li>
+          <li> 14 years since I wrote the first program (<a href="https://en.wikipedia.org/wiki/QuickBASIC" target="_blank">QuickBasic</a>)</li>
+          <li> Interested in Reliable, Scalable, and Maintainable applications </li>
+          <li> Guitarist & Illusionist </li>
+        </ul>
+
+<!--        I have around 3 years of professional experience in full-stack-->
+<!--        web development. Most of it is around the java and typescript-->
+<!--        ecosystem (tech stack: Angular/Spring).-->
+<!--        <br><br>-->
+<!--        I can tackle projects from database calls up to implementing-->
+<!--        back-end web services and working on UI/UX design .-->
+<!--        <br><br>-->
         My mission is to reach and collaborate with pioneers not only to
         transform people's lives but also to impact the future of software development profession through
         <span style="text-decoration: underline"><b>learning</b></span> the best techniques & <span style="text-decoration: underline"><b>sharing</b></span> knowledge continuously with others.
 
-        <div style="padding-top: 1em"><br> Currently focusing on full-stack, scalable web application development.</div>
+<!--        <div style="padding-top: 1em"><br> Currently focusing on full-stack, scalable web application development.</div>-->
       </div>
     </div>
     <ng-container *ngIf="isWideScreen$ | async">
       <div [class]="(isWideScreen$ |async)?'col-4':'col-md-12'" style="padding: 8em 0 0 5em; text-align: center">
         <div>
-          <img style="border-radius: 50%" width="230" src="../../../../assets/me9.jpg">
+          <img style="border-radius: 50%" width="230" src="../../../../assets/me1220217.png">
         </div>
         <div>
           <button mat-stroked-button (click)="downloadMyResume()" style="line-height: 12px; padding: 1em; margin:1em;     background-color: #f5f5f5;">
             <mat-icon style="padding-top: 0.33em">cloud_download</mat-icon>
             <span style="padding-left: 1em">Download Resume (CV) <br> <span
-              style="font-size: smaller;color: #3286ce; font-weight: 400;">Last update 03/2021</span></span>
+              style="font-size: smaller;color: #3286ce; font-weight: 400;">Last update 01/2022</span></span>
           </button>
         </div>
       </div>
@@ -39,24 +49,24 @@
     <ng-container *ngIf="!(isWideScreen$ | async) && !(isSmallScreen$ | async)">
       <div [class]="(isWideScreen$ |async)?'col-8':'col-md-12'" class="row" style="padding: 2em 0 8em 5em">
         <div style="display: inline">
-          <img style="border-radius: 50%" width="150" src="../../../../assets/me9.jpg">
+          <img style="border-radius: 50%" width="150" src="../../../../assets/me1220217.png">
         </div>
         <div style="padding: 2em 0 0 3em; display: inline">
           <button mat-stroked-button (click)="downloadMyResume()" style="line-height: 12px; padding: 1em; margin:1em;     background-color: #f5f5f5;">
             <mat-icon style="padding-top: 0.33em">cloud_download</mat-icon>
             <span style="padding-left: 1em">Download Resume (CV) <br> <span
-              style="font-size: smaller;color: #3286ce; font-weight: 400;">Last update 03/2021</span></span>
+              style="font-size: smaller;color: #3286ce; font-weight: 400;">Last update 01/2022</span></span>
           </button>
         </div>
       </div>
     </ng-container>
 
     <div *ngIf="isSmallScreen$ |async" class="col-12" style="text-align: center" >
-        <img style="border-radius: 50%" width="120" src="../../../../assets/me9.jpg">
+        <img style="border-radius: 50%" width="120" src="../../../../assets/me1220217.png">
       <button mat-stroked-button (click)="downloadMyResume()" style="line-height: 12px; padding: 1em; margin:1em;     background-color: #f5f5f5;">
         <mat-icon style="padding-top: 0.33em">cloud_download</mat-icon>
         <span style="padding-left: 1em">Download Resume (CV) <br> <span
-          style="font-size: smaller;color: #3286ce; font-weight: 400;">Last update 08/2021</span></span>
+          style="font-size: smaller;color: #3286ce; font-weight: 400;">Last update 01/2022</span></span>
       </button>
     </div>
   </div>
