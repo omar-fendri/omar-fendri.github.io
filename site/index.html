@@ -1,0 +1,415 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Omar Fendri is a full-stack software engineer based in Paris, working with Java, TypeScript, Spring, and Angular."
+    />
+    <meta name="theme-color" content="#f7f8f5" />
+    <meta name="color-scheme" content="light dark" />
+    <meta property="og:title" content="Omar Fendri — Software Engineer" />
+    <meta
+      property="og:description"
+      content="Full-stack software engineer based in Paris, interested in reliable systems, clear code, and thoughtful collaboration."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://omarfendri.com/" />
+    <meta property="og:image" content="https://omarfendri.com/assets/omar-fendri-linkedin.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="canonical" href="https://omarfendri.com/" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="/styles.css?v=20260714ah" />
+    <title>Omar Fendri — Software Engineer</title>
+    <script>
+      document.documentElement.classList.add("js");
+      try {
+        const savedTheme = localStorage.getItem("portfolio-theme-v2");
+        document.documentElement.dataset.theme = savedTheme || "light";
+      } catch (_) {}
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Omar Fendri",
+        "url": "https://omarfendri.com/",
+        "image": "https://omarfendri.com/assets/omar-fendri-linkedin.jpg",
+        "jobTitle": "Software Engineer",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Paris",
+          "addressCountry": "FR"
+        },
+        "sameAs": [
+          "https://www.linkedin.com/in/omar-fendri/",
+          "https://github.com/omar-fendri"
+        ],
+        "knowsAbout": [
+          "Java",
+          "TypeScript",
+          "Angular",
+          "Spring Boot",
+          "Software Architecture",
+          "Enterprise Software"
+        ]
+      }
+    </script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+
+    <header class="site-header" data-header>
+      <div class="shell header-inner">
+        <a class="brand" href="#top" aria-label="Omar Fendri, home">
+          <span>Omar Fendri</span>
+        </a>
+
+        <nav class="desktop-nav" aria-label="Primary navigation">
+          <a href="#about">About</a>
+          <a href="#experience">Experience</a>
+          <a href="#toolkit">Skills</a>
+          <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="header-actions">
+          <button class="icon-button theme-toggle" type="button" aria-label="Switch color theme" data-theme-toggle>
+            <svg class="sun-icon" aria-hidden="true" viewBox="0 0 24 24">
+              <circle cx="12" cy="12" r="3.5"></circle>
+              <path d="M12 2v2M12 20v2M4.93 4.93l1.42 1.42M17.65 17.65l1.42 1.42M2 12h2M20 12h2M4.93 19.07l1.42-1.42M17.65 6.35l1.42-1.42"></path>
+            </svg>
+            <svg class="moon-icon" aria-hidden="true" viewBox="0 0 24 24">
+              <path d="M20.4 15.2A8.7 8.7 0 0 1 8.8 3.6 8.7 8.7 0 1 0 20.4 15.2Z"></path>
+            </svg>
+          </button>
+          <button
+            class="icon-button menu-toggle"
+            type="button"
+            aria-expanded="false"
+            aria-controls="mobile-navigation"
+            aria-label="Open navigation"
+            data-menu-toggle
+          >
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+
+      <nav class="mobile-nav" id="mobile-navigation" aria-label="Mobile navigation" data-mobile-nav>
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#toolkit">Skills</a>
+        <a href="#contact">Contact</a>
+        <a href="/assets/omar-fendri-cv-2026.pdf" target="_blank" rel="noreferrer">Résumé ↗</a>
+      </nav>
+    </header>
+
+    <main id="main-content">
+      <section class="hero shell" id="top" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <div class="hero-intro reveal">
+            <p>Software engineering is still a young craft, and we are still learning how to do it effectively.</p>
+            <p>
+              Curiosity, humility, and ownership matter
+              <span class="hero-accent">even more when AI is part of the work.</span>
+            </p>
+          </div>
+          <div class="hero-actions reveal">
+            <a class="button button-primary" href="#experience">View experience</a>
+            <a class="button button-secondary" href="/assets/omar-fendri-cv-2026.pdf" target="_blank" rel="noreferrer">Read my résumé <span aria-hidden="true">↗</span></a>
+          </div>
+          <p class="hero-note reveal">Currently working with EUROCONTROL through <a class="inline-link" href="https://www.racemusconsulting.com/" target="_blank" rel="noreferrer">Racemus Consulting</a>.</p>
+        </div>
+
+        <div class="hero-visual reveal">
+          <div class="portrait-frame">
+            <img
+              src="/assets/omar-fendri-linkedin.jpg"
+              alt="Portrait of Omar Fendri"
+              width="800"
+              height="800"
+              fetchpriority="high"
+            />
+          </div>
+          <h1 id="hero-title" class="portrait-name">Hello, I’m Omar.</h1>
+          <p class="portrait-description">
+            <span class="status-dot" aria-hidden="true"></span>
+            <span>Software engineer and computer scientist based in Paris.</span>
+          </p>
+          <div class="portrait-links" aria-label="Profile links">
+            <a href="https://www.linkedin.com/in/omar-fendri/" target="_blank" rel="noreferrer">LinkedIn ↗</a>
+            <a href="https://github.com/omar-fendri" target="_blank" rel="noreferrer">GitHub ↗</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section shell" id="about" aria-labelledby="about-title">
+        <div class="section-aside reveal">
+          <p class="section-kicker">About</p>
+        </div>
+        <div class="section-content">
+          <h2 id="about-title" class="reveal">A little about how I work.</h2>
+          <div class="about-grid">
+            <p class="lead reveal">
+              My experience spans consulting for large European institutions and helping build an ERP product from its early stages.
+            </p>
+            <div class="body-copy reveal">
+              <p>
+                I work across backend and frontend systems, mostly with Java, TypeScript, Spring, and Angular. I value readable code, steady delivery, and interfaces that make difficult tasks easier to understand.
+              </p>
+              <p>
+                I also spend time learning how LLMs and AI-assisted tools can support software teams. I’m interested in practical uses that help people work better without losing engineering judgment or ownership.
+              </p>
+            </div>
+          </div>
+          <ul class="work-values reveal" aria-label="Working values">
+            <li>Ask questions early</li>
+            <li>Keep things understandable</li>
+            <li>Share what I learn</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section section-soft" id="experience" aria-labelledby="experience-title">
+        <div class="shell section-layout">
+          <div class="section-aside reveal">
+            <p class="section-kicker">Experience</p>
+          </div>
+          <div class="section-content">
+            <div class="section-heading reveal">
+              <h2 id="experience-title">Where I’ve worked</h2>
+              <p>A selection of roles from my recent experience.</p>
+            </div>
+
+            <div class="timeline">
+              <article class="role reveal">
+                <div class="role-meta">
+                  <p class="role-period">May 2026 — Present</p>
+                  <p class="role-location">Brétigny-sur-Orge, France</p>
+                </div>
+                <div class="role-main">
+                  <div class="company-heading">
+                    <img class="company-logo" src="/assets/logos/eurocontrol.jpg" alt="EUROCONTROL logo" width="100" height="100" loading="lazy" />
+                    <div>
+                      <h3>Full Stack Engineer</h3>
+                      <p>EUROCONTROL <span>through <a class="inline-link" href="https://www.racemusconsulting.com/" target="_blank" rel="noreferrer">Racemus Consulting</a></span></p>
+                    </div>
+                  </div>
+                  <p class="role-summary">Full-stack engineering assignment supporting EUROCONTROL systems.</p>
+                  <ul class="role-tags" aria-label="EUROCONTROL focus areas">
+                    <li>Full-stack</li>
+                    <li>Enterprise systems</li>
+                  </ul>
+                </div>
+              </article>
+
+              <article class="role reveal">
+                <div class="role-meta">
+                  <p class="role-period">Jul 2024 — Jan 2026</p>
+                  <p class="role-location">Grand Paris, France</p>
+                </div>
+                <div class="role-main">
+                  <div class="company-heading">
+                    <img class="company-logo" src="/assets/logos/societe-generale-cib.jpg" alt="Société Générale CIB logo" width="100" height="100" loading="lazy" />
+                    <div>
+                      <h3>Software Engineer</h3>
+                      <p>Société Générale CIB <span>through <a class="inline-link" href="https://www.racemusconsulting.com/" target="_blank" rel="noreferrer">Racemus Consulting</a></span></p>
+                    </div>
+                  </div>
+                  <p class="role-summary">
+                    Shared ownership of core APIs and batch components across design, development, release management, and production monitoring.
+                  </p>
+                  <ul class="achievement-list">
+                    <li>Improved a daily balance batch from more than one hour to about eight minutes.</li>
+                    <li>Led code reviews and shared software craftsmanship practices with 30+ engineers.</li>
+                    <li>Introduced LLM tools into day-to-day engineering workflows and improved internal developer experience.</li>
+                  </ul>
+                  <ul class="role-tags" aria-label="Société Générale technologies">
+                    <li>Java</li>
+                    <li>Spring Batch</li>
+                    <li>JPA / Hibernate</li>
+                    <li>Oracle</li>
+                  </ul>
+                </div>
+              </article>
+
+              <article class="role reveal">
+                <div class="role-meta">
+                  <p class="role-period">Dec 2022 — Jun 2024</p>
+                  <p class="role-location">Paris, France</p>
+                </div>
+                <div class="role-main">
+                  <div class="company-heading">
+                    <img class="company-logo" src="/assets/logos/bnp-paribas-securities-services.jpg" alt="BNP Paribas Securities Services logo" width="100" height="100" loading="lazy" />
+                    <div>
+                      <h3>Backend Engineer</h3>
+                      <p>BNP Paribas Securities Services <span>through <a class="inline-link" href="https://www.racemusconsulting.com/" target="_blank" rel="noreferrer">Racemus Consulting</a></span></p>
+                    </div>
+                  </div>
+                  <p class="role-summary">
+                    Helped evolve and stabilize a securities settlement and custody platform processing millions of daily transactions.
+                  </p>
+                  <ul class="achievement-list">
+                    <li>Maintained a 5M+ line platform in an environment with demanding reliability requirements.</li>
+                    <li>Led parallel-run cycles before major releases with teams across Paris, Lisbon, and Chennai.</li>
+                  </ul>
+                  <ul class="role-tags" aria-label="BNP Paribas technologies">
+                    <li>Java</li>
+                    <li>PL/SQL</li>
+                    <li>Production support</li>
+                    <li>Release validation</li>
+                  </ul>
+                </div>
+              </article>
+
+              <article class="role reveal">
+                <div class="role-meta">
+                  <p class="role-period">Sep 2019 — Aug 2022</p>
+                  <p class="role-location">Tunis, Tunisia</p>
+                </div>
+                <div class="role-main">
+                  <div class="company-heading">
+                    <img class="company-logo" src="/assets/logos/advanced-derivative-solutions.jpg" alt="Advanced Derivative Solutions logo" width="100" height="100" loading="lazy" />
+                    <div>
+                      <h3>Full Stack Engineer</h3>
+                      <p>Advanced Derivative Solutions</p>
+                    </div>
+                  </div>
+                  <p class="role-summary">
+                    Took ownership of core development for an ERP suite built from scratch for private equity firms.
+                  </p>
+                  <ul class="achievement-list">
+                    <li>Designed and delivered workflow, form-builder, investor-portal, and reporting modules.</li>
+                    <li>Improved UX, performance, and maintainability while mentoring early-career developers.</li>
+                    <li>Contributed to a product nominated for the NEXT FINTECH FORUM Awards 2022.</li>
+                  </ul>
+                  <ul class="role-tags" aria-label="Advanced Derivative Solutions technologies">
+                    <li>Angular</li>
+                    <li>Spring</li>
+                    <li>Highcharts</li>
+                    <li>MySQL</li>
+                  </ul>
+                </div>
+              </article>
+            </div>
+
+            <div class="consulting-note reveal">
+              <img src="/assets/logos/racemus-consulting.jpg" alt="Racemus Consulting logo" width="100" height="100" loading="lazy" />
+              <p>My assignments at EUROCONTROL, Société Générale CIB, and BNP Paribas were carried out through <a class="inline-link" href="https://www.racemusconsulting.com/" target="_blank" rel="noreferrer">Racemus Consulting</a>.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section shell" id="toolkit" aria-labelledby="toolkit-title">
+        <div class="section-aside reveal">
+          <p class="section-kicker">Skills</p>
+        </div>
+        <div class="section-content">
+          <div class="section-heading reveal">
+            <h2 id="toolkit-title">Tools I use regularly</h2>
+            <p>The exact stack depends on the team and the problem.</p>
+          </div>
+
+          <div class="toolkit-grid">
+            <article class="tool-group reveal">
+              <h3>Languages</h3>
+              <p>Java · TypeScript · JavaScript · C++ · Python · PL/SQL · HTML · CSS</p>
+            </article>
+            <article class="tool-group reveal">
+              <h3>Backend</h3>
+              <p>Spring Boot · Spring Batch · Spring Security · REST APIs · JPA / Hibernate · OpenAPI</p>
+            </article>
+            <article class="tool-group reveal">
+              <h3>Frontend</h3>
+              <p>React · Angular · RxJS · Material UI · TanStack Query · Zustand · AG Grid · React Hook Form</p>
+            </article>
+            <article class="tool-group reveal">
+              <h3>Databases</h3>
+              <p>PostgreSQL · PostGIS · Oracle · MySQL · MongoDB · Liquibase · Flyway · OpenLayers · Proj4</p>
+            </article>
+            <article class="tool-group reveal">
+              <h3>Build, testing &amp; delivery</h3>
+              <p>Git · Maven · Vite · JUnit · Vitest · Docker · Jenkins · Azure DevOps · Linux</p>
+            </article>
+            <article class="tool-group reveal">
+              <h3>Observability</h3>
+              <p>Grafana · Kibana</p>
+            </article>
+            <article class="tool-group reveal">
+              <h3>AI-assisted development</h3>
+              <p>LLMs · AI agents · Claude Code · Codex · Context engineering best practices · Developer workflows</p>
+            </article>
+          </div>
+
+          <div class="background-grid">
+            <div class="background-item education-card reveal">
+              <img class="background-logo" src="/assets/logos/university-tunis-el-manar.png" alt="Université de Tunis El Manar logo" width="364" height="400" loading="lazy" />
+              <div class="education-content">
+                <p class="mini-label">Education</p>
+                <div class="education-degree">
+                  <h3>Software Engineering &amp; Computer Science</h3>
+                  <p class="degree-details">
+                    <span class="degree-name">National Engineering Degree</span>
+                    <span>Institut Supérieur d’Informatique</span>
+                    <span>University of Tunis El Manar · 2019</span>
+                  </p>
+                </div>
+                <div class="education-entry">
+                  <h3>Computer Network Administration &amp; Services</h3>
+                  <p class="degree-details">
+                    <span class="degree-name">Applied Bachelor’s Degree</span>
+                    <span>Institut Supérieur d’Informatique</span>
+                    <span>University of Tunis El Manar · 2015</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="background-item reveal">
+              <div class="background-heading">
+                <img class="background-logo" src="/assets/logos/icpc.png" alt="ICPC logo" width="94" height="94" loading="lazy" />
+                <div>
+                  <p class="mini-label">A few more details</p>
+                  <h3>ICPC Qualifications Alumnus</h3>
+                </div>
+              </div>
+              <p>Taking part in the ICPC qualifications was an opportunity to dive deeper into computer science, algorithms, and structured problem-solving.</p>
+              <p>Native Arabic speaker, professionally fluent in English and French. Interested in AI, digital wellbeing, data science, and health.</p>
+              <a class="inline-link background-link" href="https://icpc.global/ICPCID/N0NP7VWMM5H6" target="_blank" rel="noreferrer">View my ICPC profile ↗</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact-section" id="contact" aria-labelledby="contact-title">
+        <div class="shell contact-inner">
+          <div class="contact-copy reveal">
+            <p class="section-kicker">Contact</p>
+            <h2 id="contact-title">Thanks for stopping by.</h2>
+            <p>If you’d like to get in touch, email me or connect with me on LinkedIn.</p>
+          </div>
+          <div class="contact-actions reveal">
+            <a class="contact-email" href="mailto:fendri.omar@yahoo.fr">fendri.omar@yahoo.fr <span aria-hidden="true">↗</span></a>
+            <div class="social-links">
+              <a href="https://www.linkedin.com/in/omar-fendri/" target="_blank" rel="noreferrer">LinkedIn ↗</a>
+              <a href="https://github.com/omar-fendri" target="_blank" rel="noreferrer">GitHub ↗</a>
+              <a href="/assets/omar-fendri-cv-2026.pdf" target="_blank" rel="noreferrer">Résumé ↗</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="shell footer-inner">
+        <p>© <span data-year></span> Omar Fendri</p>
+        <p>Designed and built with care.</p>
+        <a href="#top">Back to top ↑</a>
+      </div>
+    </footer>
+
+    <script src="/script.js?v=20260714ah" defer></script>
+  </body>
+</html>
