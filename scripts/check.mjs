@@ -11,7 +11,6 @@ const requiredFiles = [
   "sitemap.xml",
   "favicon.ico",
   "assets/omar-fendri-linkedin.jpg",
-  "assets/omar-fendri-cv-2026.pdf",
   "assets/logos/eurocontrol.jpg",
   "assets/logos/racemus-consulting.jpg",
   "assets/logos/societe-generale-cib.jpg",

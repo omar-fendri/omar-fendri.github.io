@@ -20,7 +20,7 @@
     <meta name="twitter:card" content="summary_large_image" />
     <link rel="canonical" href="https://omarfendri.com/" />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
-    <link rel="stylesheet" href="/styles.css?v=20260714ah" />
+    <link rel="stylesheet" href="/styles.css?v=20260715f" />
     <title>Omar Fendri — Software Engineer</title>
     <script>
       document.documentElement.classList.add("js");
@@ -102,7 +102,6 @@
         <a href="#experience">Experience</a>
         <a href="#toolkit">Skills</a>
         <a href="#contact">Contact</a>
-        <a href="/assets/omar-fendri-cv-2026.pdf" target="_blank" rel="noreferrer">Résumé ↗</a>
       </nav>
     </header>
 
@@ -118,9 +117,11 @@
           </div>
           <div class="hero-actions reveal">
             <a class="button button-primary" href="#experience">View experience</a>
-            <a class="button button-secondary" href="/assets/omar-fendri-cv-2026.pdf" target="_blank" rel="noreferrer">Read my résumé <span aria-hidden="true">↗</span></a>
           </div>
-          <p class="hero-note reveal">Currently working with EUROCONTROL through <a class="inline-link" href="https://www.racemusconsulting.com/" target="_blank" rel="noreferrer">Racemus Consulting</a>.</p>
+          <p class="hero-note reveal">
+            <span class="status-dot" aria-hidden="true"></span>
+            <span>Currently working with EUROCONTROL through <a class="inline-link" href="https://www.racemusconsulting.com/" target="_blank" rel="noreferrer">Racemus Consulting</a>.</span>
+          </p>
         </div>
 
         <div class="hero-visual reveal">
@@ -135,7 +136,6 @@
           </div>
           <h1 id="hero-title" class="portrait-name">Hello, I’m Omar.</h1>
           <p class="portrait-description">
-            <span class="status-dot" aria-hidden="true"></span>
             <span>Software engineer and computer scientist based in Paris.</span>
           </p>
           <div class="portrait-links" aria-label="Profile links">
@@ -150,19 +150,13 @@
           <p class="section-kicker">About</p>
         </div>
         <div class="section-content">
-          <h2 id="about-title" class="reveal">A little about how I work.</h2>
-          <div class="about-grid">
-            <p class="lead reveal">
-              My experience spans consulting for large European institutions and helping build an ERP product from its early stages.
+          <h2 id="about-title" class="reveal">What the work has taught me.</h2>
+          <div class="about-statement reveal">
+            <p>
+              In <cite>Clean Code</cite>, Robert C. Martin wrote that “the ratio of time spent reading versus writing is well over 10 to 1.”
+              <span class="about-highlight">AI agents have not made that observation obsolete.</span>
+              They can produce code quickly, but engineers still need to read it, understand the system around it, and take responsibility for what becomes part of the software. That understanding is also what allows us to give agents the right context and steer the work.
             </p>
-            <div class="body-copy reveal">
-              <p>
-                I work across backend and frontend systems, mostly with Java, TypeScript, Spring, and Angular. I value readable code, steady delivery, and interfaces that make difficult tasks easier to understand.
-              </p>
-              <p>
-                I also spend time learning how LLMs and AI-assisted tools can support software teams. I’m interested in practical uses that help people work better without losing engineering judgment or ownership.
-              </p>
-            </div>
           </div>
           <ul class="work-values reveal" aria-label="Working values">
             <li>Ask questions early</li>
@@ -197,10 +191,16 @@
                       <p>EUROCONTROL <span>through <a class="inline-link" href="https://www.racemusconsulting.com/" target="_blank" rel="noreferrer">Racemus Consulting</a></span></p>
                     </div>
                   </div>
-                  <p class="role-summary">Full-stack engineering assignment supporting EUROCONTROL systems.</p>
+                  <p class="role-summary">Contributing to a tool used to prepare, validate, and deliver data for air traffic control simulation exercises.</p>
                   <ul class="role-tags" aria-label="EUROCONTROL focus areas">
-                    <li>Full-stack</li>
-                    <li>Enterprise systems</li>
+                    <li>Spring</li>
+                    <li>Azure DevOps</li>
+                    <li>React</li>
+                    <li>Zustand</li>
+                    <li>TanStack Query</li>
+                    <li>AG Grid</li>
+                    <li>OpenLayers</li>
+                    <li>PostgreSQL</li>
                   </ul>
                 </div>
               </article>
@@ -223,8 +223,8 @@
                   </p>
                   <ul class="achievement-list">
                     <li>Improved a daily balance batch from more than one hour to about eight minutes.</li>
-                    <li>Led code reviews and shared software craftsmanship practices with 30+ engineers.</li>
-                    <li>Introduced LLM tools into day-to-day engineering workflows and improved internal developer experience.</li>
+                    <li>Guided code reviews and promoted software craftsmanship practices across the engineering team.</li>
+                    <li>Introduced LLM tools into day-to-day engineering workflows.</li>
                   </ul>
                   <ul class="role-tags" aria-label="Société Générale technologies">
                     <li>Java</li>
@@ -395,7 +395,6 @@
             <div class="social-links">
               <a href="https://www.linkedin.com/in/omar-fendri/" target="_blank" rel="noreferrer">LinkedIn ↗</a>
               <a href="https://github.com/omar-fendri" target="_blank" rel="noreferrer">GitHub ↗</a>
-              <a href="/assets/omar-fendri-cv-2026.pdf" target="_blank" rel="noreferrer">Résumé ↗</a>
             </div>
           </div>
         </div>
@@ -410,6 +409,6 @@
       </div>
     </footer>
 
-    <script src="/script.js?v=20260714ah" defer></script>
+    <script src="/script.js?v=20260715f" defer></script>
   </body>
 </html>

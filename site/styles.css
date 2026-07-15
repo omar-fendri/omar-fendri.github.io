@@ -320,7 +320,8 @@ ul:last-child {
   margin-top: clamp(12px, 1.4vw, 18px);
 }
 
-.hero-accent {
+.hero-accent,
+.about-highlight {
   padding: 0.06em 0.12em;
   background: var(--accent-soft);
   color: var(--text);
@@ -329,9 +330,20 @@ ul:last-child {
 }
 
 .hero-note {
+  display: flex;
   margin: 18px 0 0;
+  align-items: flex-start;
+  gap: 10px;
   color: var(--faint);
   font-size: 0.9rem;
+}
+
+.hero-note .status-dot {
+  width: 6px;
+  height: 6px;
+  margin-top: 0.5em;
+  flex: 0 0 6px;
+  box-shadow: 0 0 0 4px var(--accent-soft);
 }
 
 .hero-actions {
@@ -407,21 +419,10 @@ ul:last-child {
 }
 
 .portrait-description {
-  display: flex;
   margin: 0 4px;
-  align-items: flex-start;
-  gap: 10px;
   color: var(--faint);
   font-size: 0.82rem;
   line-height: 1.55;
-}
-
-.portrait-description .status-dot {
-  width: 6px;
-  height: 6px;
-  margin-top: 0.48em;
-  flex: 0 0 6px;
-  box-shadow: 0 0 0 4px var(--accent-soft);
 }
 
 .portrait-links {
@@ -469,28 +470,17 @@ ul:last-child {
   font-weight: 650;
 }
 
-.about-grid {
-  display: grid;
-  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
-  gap: clamp(40px, 7vw, 86px);
+.about-statement {
+  max-width: 880px;
   padding-top: 30px;
   border-top: 1px solid var(--border);
-}
-
-.lead {
-  color: var(--text);
-  font-size: 1.3rem;
-  line-height: 1.6;
-}
-
-.body-copy {
-  max-width: 640px;
   color: var(--muted);
-  font-size: 1.02rem;
+  font-size: clamp(1.2rem, 2vw, 1.45rem);
+  line-height: 1.65;
 }
 
-.body-copy p {
-  margin-bottom: 20px;
+.about-statement cite {
+  color: var(--text);
 }
 
 .work-values {
@@ -1047,18 +1037,9 @@ ul:last-child {
     font-size: clamp(2.2rem, 11vw, 3rem);
   }
 
-  .about-grid,
   .toolkit-grid,
   .background-grid {
     grid-template-columns: 1fr;
-  }
-
-  .about-grid {
-    gap: 22px;
-  }
-
-  .lead {
-    font-size: 1.15rem;
   }
 
   .role {
